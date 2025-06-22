@@ -1,0 +1,22 @@
+server:
+  port: 8080  # Puerto en el que se ejecuta la aplicación
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sharelist  # URL de conexión a la base de datos MySQL
+    username: your_username                     # Usuario de la base de datos
+    password: your_password                     # Contraseña de la base de datos
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # Puede ser 'validate', 'update', 'create', 'create-drop'. Usar 'update' para desarrollo.
+    show-sql: true      # Muestra las consultas SQL en la consola
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect  # Dialecto SQL específico para MySQL 8
+
+security:
+  jwt:
+    secret-key: your_super_secret_key_here     # Clave secreta para firmar tokens JWT
+    expire-length: 3600000                     # Duración del token JWT en milisegundos (1 hora)
