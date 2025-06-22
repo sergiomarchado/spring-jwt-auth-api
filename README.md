@@ -6,7 +6,7 @@ Una API RESTful construida con **Spring Boot** que implementa autenticación med
 
 ## 🚀 Características
 
-* 📦 Registro de usuarios con validación
+* 📆 Registro de usuarios con validación
 * 🔐 Autenticación con JSON Web Tokens (JWT)
 * 🔓 Endpoints públicos y protegidos diferenciados
 * ✅ Validación de formularios con mensajes personalizados
@@ -15,6 +15,7 @@ Una API RESTful construida con **Spring Boot** que implementa autenticación med
 * 📚 Estructura clara con DTOs y separación por capas
 
 ---
+
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -67,12 +68,12 @@ Incluimos un archivo `application-example.yml` como plantilla.
 com.sharelist.api
 ├── config                # Configuración de seguridad
 ├── controller            # Controladores REST
-├── dto                  # Objetos de transferencia (Login, Registro)
+├── dto                   # Objetos de transferencia (Login, Registro)
 ├── exception             # Manejador de excepciones y custom errors
-├── model                # Entidad User (JPA)
-├── repository           # Repositorio de usuarios (Spring Data JPA)
-├── security             # Lógica JWT + filtros + servicios
-├── service              # Lógica de negocio para registro y auth
+├── model                 # Entidad User (JPA)
+├── repository            # Repositorio de usuarios (Spring Data JPA)
+├── security              # Lógica JWT + filtros + servicios
+├── service               # Lógica de negocio para registro y auth
 └── ShareListApiApplication.java  # Entry point
 ```
 
@@ -151,7 +152,15 @@ mvn spring-boot:run
 
 ---
 
-## 🧪 Test y mejoras futuras
+## 🧪 Demo en vídeo
+
+[![Ver demo en YouTube](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+
+Haz clic en la imagen para ver una demo funcional de ShareList API en acción ▶️
+
+---
+
+## 🧰 Test y mejoras futuras
 
 * [ ] Añadir test unitarios con Mockito y JUnit
 * [ ] Sistema de roles (ADMIN / USER)
@@ -165,3 +174,17 @@ mvn spring-boot:run
 Este proyecto está bajo licencia MIT.
 
 © 2025 Sergio Marchado Ropero — ShareList API
+
+---
+
+## 🚀 Otros proyectos destacados
+
+### [PET EXPLORER 🗺️ Guía de Viajes Pet-Friendly 🐶 (Android) con IA](https://github.com/sergiomarchado/GuiaDeViajes_Android_GPT)
+
+Una aplicación Android moderna que combina Jetpack Compose, Google Maps y la API de ChatGPT para encontrar lugares pet-friendly.
+
+* 🤖 Respuestas enriquecidas con ChatGPT (markdown renderizado)
+* 🌍 Búsqueda geolocalizada con Google Maps
+* 💾 Room cache para optimización
+* 📱 Jetpack Compose + Material 3
+* 🗑️ Navegación con filtros inteligentes
